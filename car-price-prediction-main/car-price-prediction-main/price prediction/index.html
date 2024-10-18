@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federated Car Price Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Federated Car Price Prediction</h1>
+            <p>Enter the details of the car to predict its price.</p>
+        </header>
+        
+        <main>
+            <form id="car-form">
+                <div class="form-group">
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" placeholder="Enter the year of the car" required>
+                </div>
+                <div class="form-group">
+                    <label for="present-price">Present Price (₹):</label>
+                    <input type="number" id="present-price" placeholder="Enter current market price" required>
+                </div>
+                <div class="form-group">
+                    <label for="kms-driven">Kms Driven:</label>
+                    <input type="number" id="kms-driven" placeholder="Enter total kilometers driven" required>
+                </div>
+                <div class="form-group">
+                    <label for="fuel-type">Fuel Type:</label>
+                    <select id="fuel-type" required>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="CNG">CNG</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="seller-type">Seller Type:</label>
+                    <select id="seller-type" required>
+                        <option value="Dealer">Dealer</option>
+                        <option value="Individual">Individual</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="transmission">Transmission:</label>
+                    <select id="transmission" required>
+                        <option value="Manual">Manual</option>
+                        <option value="Automatic">Automatic</option>
+                    </select>
+                </div>
+                <button type="submit">Predict Price</button>
+            </form>
+            <div id="result" class="result"></div>
+            <p><a href="login.html">Return to Login Page</a></p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
